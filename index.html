@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            /* font: 20px Montserrat, sans-serif; */
+            line-height: 1.8;
+            /* color: #f5f6f7; */
+            background-color: #c7eeff;
+            font: 20px;
+        }
+        
+        .margin {
+            margin-bottom: 45px;
+        }
+        
+        .bg-1 {
+            /* background-color: #1abc9c; */
+            background-color: #c7eeff;
+            /* Green */
+            color: #333;
+        }
+        
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+        
+        .header_big {
+            color: #4d5ccf;
+            font-size: 60px;
+            font-family: Quicksand, sans-serif;
+        }
+        
+        .header_m {
+            font-size: 40px;
+            font-family: Quicksand, sans-serif;
+        }
+        
+        .container-fluid {
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+        
+        .navbar-default .navbar-nav>li>a {
+            color: #333;
+        }
+        
+        iframe[seamless] {
+            border: none;
+        }
+        
+        .text_big {
+            font-size: 30px;
+        }
+        
+        .text_mid {
+            font-size: 25px;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default bg-1">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="font-size: large; font-weight: 600;">
+                    <li style="float:left"><a data-toggle="tab" class="navbar-brand" href="#me">Me</a></li>
+                    <!-- <li><a data-toggle="tab" href="#about">About</a></li> -->
+                    <li><a data-toggle="tab" href="#project">Project</a></li>
+                    <!-- <li><a data-toggle="tab" href="#contact">Contact</a></li> -->
+                    <!-- <li><a data-toggle="tab" href="#resume">Resume</a></li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <div class="tab-content">
+            <!-- First Container -->
+            <div id="me" class="tab-pane fade in active container-fluid text-center">
+                <div style="padding: 5rem 10rem 0 10rem;">
+                    <h3 class="margin header_big">Hey! I'm Nia
+                        <3</h3>
+                            <p class="text_big"><b>Data Science graduate student</b> by day, Twitch streamer by night.</p>
+                </div>
+
+                <div style="padding: 5rem 10rem 0 10rem;">
+                    <img src="assets\images\bird.jpg" class="img-responsive img-circle margin" style="display:inline; float:left;margin-top: 5rem" alt="me" width="250" height="350">
+                    <div style="width:60%; float:right">
+                        <h3 class="header_m">About me</h3>
+                        <div class="text-left">
+                            <p style="font-size: 20px;">Hey, I'm Nia (knee-uh)! I am a recent UCLA graduate and a current M.S. student in the Big Data Analytics program @ SDSU.</p>
+                            <p style="font-size: 20px;">In my free time, I can be found: playing video games, reading a good book, hiking with my dog, hanging out at the beach, and hopefully eating a good bowl of noodles.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Second Container -->
+            <!-- <div id="about" class="tab-pane fade container-fluid text-center">
+                <div style="padding: 5rem 10rem 0 10rem;">
+                    <img src="assets\images\bird.jpg" class="img-responsive img-circle margin" style="display:inline; float:left;margin-top: 5rem" alt="me" width="250" height="350">
+                    <div style="width:60%; float:right">
+                        <h3 class="header_m">About me</h3>
+                        <div class="text-left">
+                            <p style="font-size: 20px;">Hey, I'm Nia (knee-uh)! I am a recent UCLA graduate and a current M.S. student in the Big Data Analytics program @ SDSU.</p>
+                            <p style="font-size: 20px;">In my free time, I can be found: playing video games, reading a good book, hiking with my dog, hanging out at the beach, and hopefully eating a good bowl of noodles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- third Container -->
+            <div id="project" class="tab-pane fade container-fluid text-center">
+                <h3 class="header_m;"><b>Job Openings in the Pandemic</b></h3>
+                <div class="text-left">
+                    <p style="font-size: 20px;margin-top: 25px;">Project created during fall semester 2021 for the class GIS Programming with Python. Using data from the U.S. Bureau of Labor Statistics, I wanted to visualize and compare job data from September 2020 and September 2021 to generate
+                        insights on impacts of the pandemic on the workforce.</p>
+                    <p style="font-size: 18px;"><b>Data Compared: Job Openings, Job Hires, Job Quits, and Job Layoffs</b></p>
+                    <p style="font-size: 18px;font-style: italic;"><b>Python Packages used: NumPy, Pandas, Matplotlib, Folium, BeautifulSoup4, Requests</b></p>
+                    <iframe src="assets\images\MapJob_hiring.html" style="width:100%; height:500px;margin-top: 2rem;" seamless></iframe>
+                </div>
+                <div class="text-center;" style="margin-top: 5rem;">
+                    <h3 class="header_m;"><b>Rates of Change by State</b></h3>
+                    <div class="image-container">
+                        <img src="assets\images\seriesChart.jpg" class="img-responsive margin" alt="Rates of Change by State" width="80%" height="100">
+                    </div>
+                </div>
+
+                <div class="text-center;">
+                    <h3 class="header_m;"><b>Total U.S. Job Hires and Quits by Month</b></h3>
+                    <div class="image-container">
+                        <img src="assets\images\monthlyBarchart2.jpg" class="img-responsive margin" alt="Total U.S. Job Hires and Quits by Month" width="80%" height="100">
+                    </div>
+                </div>
+                <div class="text-center;">
+                    <h3 class="header_m;"><b>Total U.S. Job Openings and Layoffs by Month</b></h3>
+                    <div class="image-container">
+                        <img src="assets\images\monthlyBarchart1.jpg" class="img-responsive margin" alt="Total U.S. Job Openings and Layoffs by Month" width="80%" height="100">
+                    </div>
+                </div>
+
+                <div class="text-left">
+                    <h3 class="header_m;">Lessons Learned</h3>
+                    <p style="font-size: 20px;">Adding Tooltip to choropleth map to makeit interactive</p>
+                    <ul>
+                        <li>Choroplethtakes 2 types of data: the job data as well as the GeoJSONdata. The tooltip is based on the GeoJSON data, so the job data had to beintegrated with that in order to be reflected on the map.</li>
+                        <li>Many industries have experienced lasting changes after COVID-19</li>
+                        <li>Job openings increased throughout the pandemic while layoffs remained comparatively very low and stable</li>
+                    </ul>
+                    <p style="font-size: 20px;">If I were to expand this project</p>
+                    <ul>
+                        <li>More insight would be provided from looking at mobility data from this time period</li>
+                        <li>Examining relocation data throughout the pandemic would provide more accurate conclusions on the nature of workforce evolution</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- <div id="contact" class="tab-pane fade container-fluid bg-2 text-center">
+                <h3 class="margin">Contact me at:</h3>
+                <p></p>
+
+            </div> -->
+
+            <!-- fourth Container -->
+            <!-- <div id="resume" class="tab-pane fade container-fluid text-center">
+                <h3 class="margin">Summary</h3>
+                <p>Completed Python and Big Data Analytics classes and continuing to further develop skills. </p>
+            </div> -->
+
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+        <p>Created © 2022</p>
+    </footer>
+
+</body>
+
+</html>
