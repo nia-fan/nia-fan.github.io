@@ -97,7 +97,9 @@
                 <ul class="nav navbar-nav navbar-right" style="font-size: large; font-weight: 600;">
                     <li style="float:left"><a data-toggle="tab" class="navbar-brand" href="#me">Me</a></li>
                     <!-- <li><a data-toggle="tab" href="#about">About</a></li> -->
-                    <li><a data-toggle="tab" href="#project">Project</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
                     <!-- <li><a data-toggle="tab" href="#contact">Contact</a></li> -->
                     <!-- <li><a data-toggle="tab" href="#resume">Resume</a></li> -->
                 </ul>
@@ -106,7 +108,7 @@
 
         <div class="tab-content">
             <!-- First Container -->
-            <div id="me" class="tab-pane fade in active container-fluid text-center">
+            <div id="me" class="tab-pane fade in active container-fluid text-center" background: rgba(0, 128, 0, 0.3)>
                 <div style="padding: 5rem 10rem 0 10rem;">
                     <h3 class="margin header_big">Hey! I'm Nia :) 
                         </h3>
@@ -118,8 +120,26 @@
                     <div style="width:60%; float:right">
                         <h3 class="header_m">About me</h3>
                         <div class="text-left">
-                            <p style="font-size: 20px;">I'm Nia (knee-uh). I am a recent UCLA graduate and a current M.S. student in the Big Data Analytics program @ SDSU.</p>
-                            <p style="font-size: 20px;">In my free time, I can be found: playing video games, reading a good book, hiking with my dog, hanging out at the beach, and hopefully eating a good bowl of noodles.</p>
+                            <p style="font-size: 20px;">I'm Nia (knee-uh). I am a recent UCLA graduate and a current M.S. student in the Big Data Analytics program @ SDSU, set to graduate in 
+                                May 2023.</p>
+                                <br>
+                            <p style="font-size: 20px;">Skills that I've developed throughout the past two years include:
+                                <ul>
+                                    <li>Python</li>
+                                    <li>R (R-Studio)</li>
+                                    <li>SQL (MySQL, MariaDB)</li>
+                                    <li>PHP</li>
+                                    <li>HTML/CSS</li>
+                                    <li>ArcGIS Pro/Online</li>
+                                    <li>Business Analyst Online</li>
+                                    <li>GitHub</li>
+                                    <li>Tableau</li>
+                                    <li>Amazon AWS</li>
+                                    
+                                </ul>
+                            <br>
+                            </p>
+                            <p style="font-size: 20px;">In my free time, I can be found: reading or listening to a good book, hiking with my dog, hanging out at the beach, and hopefully eating a good bowl of noodles.</p>
                         </div>
                     </div>
                 </div>
@@ -141,50 +161,7 @@
             </div> -->
 
             <!-- third Container -->
-            <div id="project" class="tab-pane fade container-fluid text-center">
-                <h3 class="header_m;"><b>Job Openings in the Pandemic</b></h3>
-                <div class="text-left">
-                    <p style="font-size: 20px;margin-top: 25px;">Project created during fall semester 2021 for the class GIS Programming with Python. Using data from the U.S. Bureau of Labor Statistics, I wanted to visualize and compare job data from September 2020 and September 2021 to generate
-                        insights on impacts of the pandemic on the workforce.</p>
-                    <p style="font-size: 18px;"><b>Data Compared: Job Openings, Job Hires, Job Quits, and Job Layoffs</b></p>
-                    <p style="font-size: 18px;font-style: italic;"><b>Python Packages used: NumPy, Pandas, Matplotlib, Folium, BeautifulSoup4, Requests</b></p>
-                    <iframe src="assets\images\MapJob_hiring.html" style="width:100%; height:500px;margin-top: 2rem;" seamless></iframe>
-                </div>
-                <div class="text-center;" style="margin-top: 5rem;">
-                    <h3 class="header_m;"><b>Rates of Change by State</b></h3>
-                    <div class="image-container">
-                        <img src="assets\images\seriesChart.jpg" class="img-responsive margin" alt="Rates of Change by State" width="80%" height="100">
-                    </div>
-                </div>
-
-                <div class="text-center;">
-                    <h3 class="header_m;"><b>Total U.S. Job Hires and Quits by Month</b></h3>
-                    <div class="image-container">
-                        <img src="assets\images\monthlyBarchart2.jpg" class="img-responsive margin" alt="Total U.S. Job Hires and Quits by Month" width="80%" height="100">
-                    </div>
-                </div>
-                <div class="text-center;">
-                    <h3 class="header_m;"><b>Total U.S. Job Openings and Layoffs by Month</b></h3>
-                    <div class="image-container">
-                        <img src="assets\images\monthlyBarchart1.jpg" class="img-responsive margin" alt="Total U.S. Job Openings and Layoffs by Month" width="80%" height="100">
-                    </div>
-                </div>
-
-                <div class="text-left">
-                    <h3 class="header_m;">Lessons Learned</h3>
-                    <p style="font-size: 20px;">Adding Tooltip to choropleth map to make it interactive</p>
-                    <ul>
-                        <li>Choropleth takes 2 types of data: the job data as well as the GeoJSONdata. The tooltip is based on the GeoJSON data, so the job data had to beintegrated with that in order to be reflected on the map.</li>
-                        <li>Many industries have experienced lasting changes after COVID-19</li>
-                        <li>Job openings increased throughout the pandemic while layoffs remained comparatively very low and stable</li>
-                    </ul>
-                    <p style="font-size: 20px;">If I were to expand this project</p>
-                    <ul>
-                        <li>More insight would be provided from looking at mobility data from this time period</li>
-                        <li>Examining relocation data throughout the pandemic would provide more accurate conclusions on the nature of workforce evolution</li>
-                    </ul>
-                </div>
-            </div>
+           
 
 
             <!-- <div id="contact" class="tab-pane fade container-fluid bg-2 text-center">
