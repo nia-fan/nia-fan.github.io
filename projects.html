@@ -8,7 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
@@ -91,53 +96,138 @@
 </head>
 
 <body>
-    <div class="container">
+    <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-default bg-1">
+        <nav class="navbar navbar-default bg-1" style="padding-right:12rem">
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right" style="font-size: large; font-weight: 600;">
                     <li style="float:left"><a class="nav-link" href="index.html">Me</a></li>
-                    <!-- <li><a data-toggle="tab" href="#about">About</a></li> -->
                     <li><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="resume.html" target = "_blank" rel = "noopener noreferrer">Resume</a></li>
-                    <!-- <li><a data-toggle="tab" href="#contact">Contact</a></li> -->
-                    <!-- <li><a data-toggle="tab" href="#resume">Resume</a></li> -->
                 </ul>
             </div>
         </nav>
 
-
-         <!-- First Container -->
-         <div id="contact">
+        <!-- First Container -->
+        <!-- <div id="contact">
             <div style="padding: 5rem 10rem 0 10rem;">
-                    <h3 class="header_m; text-center">Check out some of my projects below:</h3>
-                    <br>
-                    <div class="text-left">
-                        <p style="font-size: 20px;"><a href = "https://nia-fan.github.io/gun-violence-analysis" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
-                            style="background-color: rgb(240, 128, 128);" role="button">An Analysis of Gun Violence in the U.S. - Spring 2023</a></p>
-                        <p style="font-size: 20px;"><a href = "https://github.com/nia-fan/bda602/wiki" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
-                            style="background-color: rgb(240, 128, 128);" role="button">Machine Learning to Predict Baseball Wins - Fall 2022</a></p>
-                        <p style="font-size: 20px;"><a href = "job-openings.html" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
-                                style="background-color: rgb(240, 128, 128);" role="button">Job Openings in the Pandemic - Fall 2021</a></p>
+                <h3 class="header_m; text-center">Check out some of my projects below:</h3>
+                <br>
+                <div class="text-left">
+                    <p style="font-size: 20px;"><a href = "https://nia-fan.github.io/gun-violence-analysis" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
+                        style="background-color: rgb(240, 128, 128);" role="button">An Analysis of Gun Violence in the U.S. - Spring 2023</a></p>
+                    <p style="font-size: 20px;"><a href = "https://github.com/nia-fan/bda602/wiki" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
+                        style="background-color: rgb(240, 128, 128);" role="button">Machine Learning to Predict Baseball Wins - Fall 2022</a></p>
+                    <p style="font-size: 20px;"><a href = "job-openings.html" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
+                            style="background-color: rgb(240, 128, 128);" role="button">Job Openings in the Pandemic - Fall 2021</a></p>
+                </div>
+            </div>
+        </div> -->
+    </header>
+
+    <div class="container" style="margin-top: 4rem">
+        <div class="row align-items-center">
+            <div class="col-lg-6 py-3" style="padding:2rem 3rem 0 3rem">
+                <h3 class="title-section">An Analysis of Gun Violence in the U.S.</h3>
+                <div style="font-style: italic;"> - Spring 2023</div>
+                <div class="divider"></div>
+                <div>
+                    Gun violence remains a widespread issue across the U.S. 
+                    Our group aims to conduct an analysis of data from the Gun Violence Archive, 
+                    a nonprofit which verifies and compiles data for public access, 
+                    in order to find patterns among these incidents and identify important risk factors.
+                </div>
+                <div style="text-align: center;">
+                <a href="https://nia-fan.github.io/gun-violence-analysis"  target="_blank" rel="noopener noreferrer" class="btn" style="background-color: rgb(0, 157, 255);border: none;color:white; margin-top:2rem">View Project</a>
+                </div>
+            </div>
+            <div class="col-lg-6 py-3 ">
+                <img src="assets\images\gunviolence.jpg" style="display:inline;" width="95%" height="300px">
+            </div>
+        </div>
+    </div> <!-- .container -->
+
+    <div class="container" style="margin-top: 4rem">
+        <div class="row align-items-center">
+            <div class="col-lg-6 py-3 ">
+                <img src="assets\images\baseball.jpg" style="display:inline;" width="95%" height="300px">
+            </div>
+            <div class="col-lg-6 py-3" style="padding:2rem 3rem 0 3rem">
+                <h3 class="title-section">Machine Learning to Predict Baseball Wins </h3>
+                <div style="font-style: italic;">- Fall 2022</div>
+                <div class="divider"></div>
+                <div>
+                    The purpose of this project is to use baseball data from 2007-2012 to fit a machine learning model that can predict whether the home team wins. 
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://github.com/nia-fan/bda602/wiki"  target="_blank" rel="noopener noreferrer" class="btn" style="background-color: rgb(0, 157, 255);border: none;color:white; margin-top:2rem">View Project </a>
+                </div>
+            </div>
+           
+        </div>
+    </div> <!-- .container -->
+
+    <div class="container" style="margin-top: 4rem">
+        <div class="row align-items-center">
+            <div class="col-lg-6 py-3" style="padding:2rem 3rem 0 3rem">
+                <h3 class="title-section">Feature Engineering Report Using the Titanic Data Set </h3>
+                <div style="font-style: italic;">- Fall 2022</div>
+                <div class="divider"></div>
+                <div>
+                    The code can be used to generate a report for any data set, showing correlations and brute force combinations among continuous or categorical predictor pairings.
+                </div>
+                <div style="text-align: center;">
+                    <a href="titanic_report.html"  target="_blank" rel="noopener noreferrer" class="btn" style="background-color: rgb(0, 157, 255);border: none;color:white; margin-top:2rem">View Project </a>
+                </div>
+            </div>
+            <div class="col-lg-6 py-3">
+                <div class="text-align:center;">
+                    <i class="fa fa-ship" style="font-size:250px;color:#15a1b3; margin-left: 8rem;"></i>
+                </div>
+                
+            </div>
+        </div>
+    </div> <!-- .container -->
+
+    <div class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+        <div class="row align-items-center">
+            <div class="col-lg-6 py-3 ">
+                <div class="text-center" style="background-color: #efeef1ab; width:95%;height:15rem;margin-top: 1rem"> 
+                    <div style="font-size: 8em;font-weight: 800;color:#2196f3; text-shadow: 2px 2px 8px #ac32c1"> 
+                    job 
+                    <i class="material-icons" style="font-size:48px;color:red">people</i>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6 py-3" style="padding:2rem 3rem 0 3rem">
+                <h3 class="title-section">Job Openings in the Pandemic </h3>
+                <div style="font-style: italic;">- Fall 2021</div>
+                <div class="divider"></div>
+                <div>
+                    Using data from the U.S. Bureau of Labor Statistics, to visualize and compare job data from September 2020 and September 2021 to generate insights on impacts of the pandemic on the workforce. 
+                </div>
+                <div style="text-align: center;">
+                    <a href="job-openings.html"  target="_blank" rel="noopener noreferrer" class="btn" style="background-color: rgb(0, 157, 255);border: none;color:white; margin-top:2rem">View Project</a>
+                </div>
+            </div>
+           
+           
         </div>
+    </div> <!-- .container -->
 
-        <!--<div class="d-flex align-items-center justify-content-center">
-            <div class="container-md background-green">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-lg-6 py-3">
-                  <div class="img-fluid py-3 text-center">
-                    <div class="embed-container">
-                        <br>
-                        <br>
-                        <br>
-                   <h2><a href = "https://nia-fan.github.io/gun-violence-analysis" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
-                    style="background-color: rgb(0, 157, 255);" role="button">An Analysis of Gun Violence in the U.S.</a></h2>
+    <div style="margin-bottom: 5rem;">
+        <span style="margin-left: 32rem;">
+            <i class="material-icons" style="font-size:36px;color:#4CAF50; padding: 2rem 5rem 0 5rem;">local_florist</i>
+            <i class="material-icons" style="font-size:36px;color:#4CAF50; padding: 2rem 5rem 0 5rem;">local_florist</i>
+            <i class="material-icons" style="font-size:36px;color:#4CAF50; padding: 2rem 5rem 0 5rem;;">local_florist</i>
+            <i class="material-icons" style="font-size:36px;color:#4CAF50; padding: 2rem 5rem 0 5rem;">local_florist</i>
+            <i class="material-icons" style="font-size:36px;color:#4CAF50; padding: 2rem 5rem 0 5rem;">local_florist</i>
+            <i class="material-icons" style="font-size:36px;color:#4CAF50; padding: 2rem 5rem 0 5rem;">local_florist</i>
+        </span>
 
-                    <h2><centre><a href = "job-openings.html" target = "_blank" rel = "noopener noreferrer" class = "btn btn-primary btn-lg btn-block" 
-                            style="background-color: rgb(0, 157, 255);" role="button">Job Openings in the Pandemic</a></centre></h2>
-                    </div>-->
+    </div>
+
+</body>
+
+       
