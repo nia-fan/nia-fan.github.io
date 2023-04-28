@@ -223,46 +223,54 @@
 
     <script>
         const width = screen.width;
-        function move() {
-            let id = null;
+        function move(pos, direct) {
+          let id = null;
           const elem = document.getElementById("animate");   
-          let pos = 0;
           clearInterval(id);
           id = setInterval(frame, 20);
           function frame() {
             if (pos == (width/2 - 450)) {
               clearInterval(id);
-              move()
-            } else {
+              move(pos-1, "left")
+            } 
+            else if(pos == 0){
+                clearInterval(id);
+                move(1, "right")
+            }
+            else if(direct==="right"){
               pos++; 
-            //   elem.style.top = pos + "px"; 
+              elem.style.left = pos + "px"; 
+            } else if(direct==="left"){
+              pos--; 
               elem.style.left = pos + "px"; 
             }
           }
         }
-        // setInterval(move, 500);
-        move()
+        move(1, "right")
 
-        function move2() {
-            // let width = screen.width;
+        function move2(pos, direct) {
           let id = null;
           const elem = document.getElementById("animate2");   
-          let pos = width-250;
           clearInterval(id);
           id = setInterval(frame, 20);
           function frame() {
-            if (pos == (width/2 + 200)) {
+            if (pos == (width/2 + 195)) {
               clearInterval(id);
-              move2()
-            } else {
-              pos--; 
-            //   elem.style.top = pos + "px"; 
+              move2(pos+1, "right");
+            } else if(pos === width-250){
+                clearInterval(id);
+                move2(pos-10, "left");
+            } else if(direct==="left"){
+               pos--; 
+               elem.style.left = pos + "px"; 
+            }
+            else if(direct==="right") {
+              pos++; 
               elem.style.left = pos + "px"; 
             }
           }
         }
-
-        move2()
+        move2(width-255, "left");
 
     </script>
 
